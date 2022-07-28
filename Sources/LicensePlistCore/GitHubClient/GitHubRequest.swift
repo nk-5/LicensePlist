@@ -22,7 +22,7 @@ extension GitHubRequest {
 
 struct DecodableDataParser: DataParser {
     var contentType: String? {
-        return "application/json"
+        return "application/vnd.github.drax-preview+json"
     }
     func parse(data: Data) throws -> Any {
         return data
